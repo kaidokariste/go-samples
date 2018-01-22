@@ -1,0 +1,24 @@
+{
+   "townName":"Tartu",
+   "area": 38.97,
+   "districts":[
+      "Tähtvere",
+      "Veeriku",
+      "Maarjamõisa",
+      "Tammelinn",
+      "Ränilinn",
+      "Vaksali",
+      "Kesklinn",
+      "Karlova",
+      "Variku",
+      "Ropka",
+      "Ropka tööstuse",
+      "Raadi-Kruusamäe",
+      "Supilinn",
+      "Ülejõe",
+      "Jaamamõisa",
+      "Annelinn",
+      "Ihaste"
+   ],
+   "population":99466
+}
