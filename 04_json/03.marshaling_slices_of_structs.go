@@ -6,15 +6,14 @@ import (
 	"os"
 )
 
-type League struct{
+type League struct {
 	Teams []Footballteam
 }
 
 type Footballteam struct {
-	Name string    `json:"name"`
-	ShortName  string `json:"shortName"`
+	Name      string `json:"name"`
+	ShortName string `json:"shortName"`
 }
-
 
 func main() {
 
@@ -24,20 +23,20 @@ func main() {
 	//Get the first argument (go run 03.marshaling_slices_of_structs.go PREMIERLEAGUE)
 	arg := os.Args[1]
 
-	switch{
+	switch {
 	case arg == "":
 		fmt.Println("Please provide argument")
 	case arg == "PREMIERLEAGUE":
 
 		//Define slice of structs conatining two documents
 		list := []Footballteam{
-			{"Manchester United","MANU"},
-			{"Chelsea","CHE"},
+			{"Manchester United", "MANU"},
+			{"Chelsea", "CHE"},
 		}
 
 		//Marshal them to  Parent struct into Teams variable
 		jsonString, err := json.Marshal(League{Teams: list})
-		if err != nil{
+		if err != nil {
 			panic(err)
 		}
 
@@ -48,4 +47,3 @@ func main() {
 		fmt.Println(arg, " not implemented yet")
 	}
 }
-

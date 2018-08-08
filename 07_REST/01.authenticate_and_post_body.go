@@ -2,10 +2,10 @@ package main
 
 import (
 	"bytes"
-	"net/http"
-	"log"
-	"io/ioutil"
 	"encoding/json"
+	"io/ioutil"
+	"log"
+	"net/http"
 )
 
 //Function for making POST request to provided API endpoint,

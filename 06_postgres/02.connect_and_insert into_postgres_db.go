@@ -12,7 +12,7 @@ const (
 	dbport     = 5432
 	dbuser     = "my.username"
 	dbpassword = "my.password"
-	db   = "mydb"
+	db         = "mydb"
 )
 
 func main() {
@@ -27,7 +27,7 @@ func main() {
 	}
 	defer db.Close()
 
-	sqlStatement :=`INSERT INTO myschema.api_response (response_date, response_status, response_body)
+	sqlStatement := `INSERT INTO myschema.api_response (response_date, response_status, response_body)
 VALUES ($1, $2, $3) RETURNING id`
 
 	id := 0

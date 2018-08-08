@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"fmt"
 
-	_ "github.com/lib/pq"
 	"encoding/json"
+	_ "github.com/lib/pq"
 )
 
 const (

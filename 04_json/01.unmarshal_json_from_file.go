@@ -1,20 +1,20 @@
 package main
 
-import(
+import (
 	"encoding/json"
-	"os"
-	"log"
 	"fmt"
+	"log"
+	"os"
 )
 
 type myTown struct {
-	TownName string
+	TownName   string
 	Population int
-	Area float32
-	Districts []string
+	Area       float32
+	Districts  []string
 }
 
-func main(){
+func main() {
 	//Open named file for reading
 	file, err := os.Open("resource/tartu.json")
 	defer file.Close()
@@ -34,4 +34,3 @@ func main(){
 	}
 	fmt.Println(tartu.TownName, tartu.Population, tartu.Area, tartu.Districts, tartu.Districts[0])
 }
-

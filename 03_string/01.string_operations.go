@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	value := "Catamandoo"
 
 	// Take length of string with len.
